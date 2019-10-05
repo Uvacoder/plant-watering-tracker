@@ -14,7 +14,7 @@ Static HTML & CSS page, using CSS grid for the layout.
 - Connect to database
 - Sorting options
   - By room
-  - By urgency to water
+  - By urgency to water@
 - Mark plants as watered
 - Add new plants from the interface
 - Remove plants from the interface

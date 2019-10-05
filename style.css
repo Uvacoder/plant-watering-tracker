@@ -35,6 +35,7 @@ header#header {
 
 header#header h1 {
   font-size: 3.5em;
+  font-weight: 400;
 }
 
 header#header h1 span {
@@ -48,7 +49,7 @@ header#header h1 span {
 main {
   margin: 0 5em;
   display: grid;
-  grid-template-columns: minmax(min-content, 19%) minmax(min-content, 19%) minmax(min-content, 19%) minmax(min-content, 19%) minmax(min-content, 19%);
+  grid-template-columns: minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%);
   grid-column-gap: 1.5em;
   grid-row-gap: 2em;
 }
@@ -60,6 +61,11 @@ main {
 main article {
   border-top: 3px solid #c89dab;
   padding-top: 1em;
+}
+
+main article header h2 {
+  font-size: 1.75em;
+  font-weight: 400;
 }
 
 main article section, main article footer{

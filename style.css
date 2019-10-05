@@ -50,6 +50,11 @@ main article.needs_watering {
   padding-right: 1em;
 }
 
+main article.needs_watering ::selection{
+  background-color: #80b8a5;
+  color: #81495b;
+}
+
 main article.needs_watering section {
   border-bottom: 1px dotted #345f51;
 }

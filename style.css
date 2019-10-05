@@ -1,8 +1,15 @@
+/* 
+ * Reset default. 
+ */
 * {
   padding: 0;
   margin: 0;
 }
 
+
+/* 
+ * Set body and default styling. 
+ */
 body {
   background-color: #345f51;
   color: #c89dab;
@@ -18,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #345f51;
 }
 
+
+/*
+ * Style the main page header.
+ */
 header#header {
   margin: 5em 10em 7em 10em;
 }
@@ -30,6 +41,10 @@ header#header h1 span {
   font-style: italic;
 }
 
+
+/*
+ * Style the main content (create css grid).
+ */
 main {
   margin: 0 5em;
   display: grid;
@@ -38,25 +53,13 @@ main {
   grid-row-gap: 2em;
 }
 
+
+/*
+ * Style the plant components.
+ */
 main article {
   border-top: 3px solid #c89dab;
   padding-top: 1em;
-}
-
-main article.needs_watering {
-  background-color: #c89dab;
-  color: #345f51;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-main article.needs_watering ::selection{
-  background-color: #80b8a5;
-  color: #81495b;
-}
-
-main article.needs_watering section {
-  border-bottom: 1px dotted #345f51;
 }
 
 main article section, main article footer{
@@ -72,4 +75,24 @@ main article section ul {
 
 main article section ul li span {
   font-weight: 500;
+}
+
+
+/*
+ * Style the plants that need watering.
+ */
+main article.needs_watering {
+  background-color: #c89dab;
+  color: #345f51;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+main article.needs_watering ::selection{
+  background-color: #80b8a5;
+  color: #81495b;
+}
+
+main article.needs_watering section {
+  border-bottom: 1px dotted #345f51;
 }

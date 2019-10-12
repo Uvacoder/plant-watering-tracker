@@ -34,7 +34,7 @@ header#header {
 }
 
 header#header h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   font-weight: 400;
 }
 
@@ -46,12 +46,17 @@ header#header h1 span {
 /*
  * Style the main content (create css grid).
  */
-main {
-  margin: 0 5em;
+main section.room {
+  margin: 0 5em 7em 5em;
   display: grid;
   grid-template-columns: minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%) minmax(290px, 19%);
   grid-column-gap: 1.5em;
   grid-row-gap: 2em;
+}
+
+main h2 {
+  font-size: 3em;
+  font-weight: 400;
 }
 
 
@@ -63,7 +68,7 @@ main article {
   padding-top: 1em;
 }
 
-main article header h2 {
+main article header h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
@@ -92,6 +97,7 @@ main article.needs_watering {
   color: #345f51;
   padding-left: 1em;
   padding-right: 1em;
+
 }
 
 main article.needs_watering ::selection{
@@ -99,6 +105,6 @@ main article.needs_watering ::selection{
   color: #81495b;
 }
 
-main article.needs_watering section {
+main article.needs_watering section, main article.needs_watering footer {
   border-bottom: 1px dotted #345f51;
 }
